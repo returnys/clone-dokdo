@@ -31,13 +31,116 @@
     <![endif]-->
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
-    <link rel="stylesheet" href="css/reset.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/mb.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrap">
+      <!-- mbmenu -->
+      <div class="mb-wrap">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="mb-nav">
+          <ul class="mb-gnb">
+            <li>
+              <a href="#">전시관 소개</a>
+              <ul class="submenu">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">전시관 연혁</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">관람 정보</a>
+              <ul class="submenu">
+                <li><a href="#">관람안내</a></li>
+                <li><a href="#">단체예약</a></li>
+                <li><a href="#">예약확인·취소</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">전시 안내</a>
+            </li>
+            <li>
+              <a href="#">독도 자료실</a>
+              <ul class="submenu">
+                <li><a href="#">독도현황</a></li>
+                <li><a href="#">독도사진</a></li>
+                <li><a href="#">교육자료실</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">열린광장</a>
+              <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">포토앨범</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- 헤더 -->
-      <header class="header"></header>
+      <header class="header">
+        <div class="inner">
+          <h1>
+            <a href="#" class="logobox">
+              <div class="logo">
+                <img src="/images/logo_simbol.svg" alt="독도전시관" />
+              </div>
+              <div class="logotxt">
+                <img src="images/logo_tx.svg" alt="독도전시관" />
+              </div>
+            </a>
+          </h1>
+          <nav class="nav">
+            <ul class="gnb">
+              <li>
+                <a href="#">전시관 소개</a>
+                <ul class="submenu">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">전시관 연혁</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">관람 정보</a>
+                <ul class="submenu">
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">단체예약</a></li>
+                  <li><a href="#">예약확인·취소</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">전시 안내</a>
+              </li>
+              <li>
+                <a href="#">독도 자료실</a>
+                <ul class="submenu">
+                  <li><a href="#">독도현황</a></li>
+                  <li><a href="#">독도사진</a></li>
+                  <li><a href="#">교육자료실</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">열린광장</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">포토앨범</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <ul class="member">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </div>
+      </header>
       <!-- //헤더 -->
       <main class="main">
         <!-- 비주얼 -->

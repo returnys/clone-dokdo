@@ -1,0 +1,101 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  z-index: 999;
+  border-bottom: 1px solid #ffffff26;
+}
+.header .inner {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logobox {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.logotxt {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 40px;
+}
+.logobox img {
+  width: 100%;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 60px;
+}
+.gnb li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.submenu {
+  display: none;
+}
+.member {
+  display: flex;
+  align-items: center;
+}
+.member li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.member li:last-child a {
+  position: relative;
+}
+.member li:last-child a::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1280px) {
+  .gnb {
+    gap: 0 50px;
+  }
+  .gnb li a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gnb {
+    display: none;
+  }
+  .member {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .logobox {
+    width: 260px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .member {
+    display: none;
+  }
+}
